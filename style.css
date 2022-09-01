@@ -2,6 +2,7 @@
     --title: #fffcf9;
     --subtitle: #b3b3b3;
     --bg-button: #e9e6e3;
+    --bg-button-hover: #ffffff;
     --background: linear-gradient(43deg, #102d71 0%, #000000 52%, #c12a23 100%);
 
     font-size: 62.5%;
@@ -15,7 +16,6 @@
 
 body {
     width: 100%;
-    height: 100vh;
 
     font-family: 'Poppins', sans-serif;
     font-size: 1.6rem;
@@ -42,12 +42,12 @@ header {
 }
 
 .film {
-    margin-bottom: 0 2.95rem 3rem;
+    margin: 0 2.95rem 3rem;
 }
 
 .film-poster {
     width: 17.1rem;
-    margin-bottom: 19.85rem;
+    margin-bottom: 1.985rem;
 }
 
 .film-title {
@@ -55,7 +55,7 @@ header {
     font-size: 2rem;
     line-height: 3rem;
 
-    margin-bottom: 19.29rem;
+    margin-bottom: 1.929rem;
 }
 
 .film-description {
@@ -75,10 +75,21 @@ header {
 
     padding: 1.0855rem 1.521rem;
     margin: 0 auto 2.6rem;
+
+    background: var(--bg-button);
+    border: 2px solid #1A1A1A;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+.find-movie button:hover {
+    background: var(--bg-button-hover);
 }
 
 .find-movie button svg {
     width: 3.556rem;
+    border-radius: 5px;
 }
 
 .find-movie button p {
@@ -93,4 +104,32 @@ header {
     font-weight: 400;
     font-size: 1.2rem;
     line-height: 1.8rem;
+}
+
+@media (min-width: 768px) {
+    header {
+        margin-top: 12.6rem;
+    }
+
+    .logo {
+        margin-bottom: 1.007rem;
+    }
+
+    .film {
+        display: flex;
+        gap: 3.4rem;
+    }
+
+    .film-poster {
+        margin-top: 1.2rem;
+    }
+
+    .find-movie {
+        margin-bottom: 19.7rem;
+    }
+
+    .find-movie p {
+        font-size: 1.4rem;
+        line-height: 2.1rem;
+    }
 }
