@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -7,7 +7,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rocketflix</title>
-
+    
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
@@ -40,18 +41,10 @@
             </div>
         </header>
 
-        <section class="film">
-            <div class="film-poster"></div>
-
-            <div>
-                <div class="film-title"></div>
-
-                <div class="film-description"></div>
-            </div>
-        </section>
+        <section id="film"></section>
 
         <section class="find-movie">
-            <button>
+            <button id="change-movie">
                 <svg width="36" height="26" viewBox="0 0 36 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_701_81)">
                     <path d="M29.3997 0.134094C31.589 1.99645 33.7782 3.86025 35.9566 5.73492C33.8075 7.65604 31.573 9.49231 29.3902 11.38C29.3953 10.1169 29.3822 8.85447 29.3947 7.59213C28.01 7.5943 26.6253 7.58423 25.2414 7.59655C24.576 7.598 23.95 7.92844 23.5018 8.40526C19.5263 12.5198 15.5427 16.6272 11.5687 20.7432C11.1271 21.199 10.5112 21.4968 9.86773 21.491C7.33966 21.507 4.81071 21.4787 2.28338 21.5076C1.3439 21.4801 0.537946 20.6337 0.538675 19.704C0.492033 18.696 1.38552 17.8271 2.38103 17.7973C4.38882 17.7785 6.3988 17.8082 8.40659 17.7836C9.13902 17.7792 9.78399 17.3546 10.246 16.8184C14.161 12.7648 18.0804 8.71461 21.9976 4.66237C22.4378 4.18482 23.0704 3.89061 23.7234 3.87612C25.6138 3.86815 27.505 3.88337 29.3948 3.8688C29.3909 2.624 29.3808 1.37912 29.3997 0.134094Z" fill="url(#paint0_linear_701_81)"/>
@@ -78,6 +71,7 @@
         </section>
     </div>
 
-    <script src="./scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script type="module" src="./main.js"></script>
 </body>
 </html>
