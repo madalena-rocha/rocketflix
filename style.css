@@ -140,6 +140,7 @@ header {
         max-width: 62.8rem;
         max-height: 31.9rem;
 
+        white-space: nowrap;
         overflow: hidden;
         text-overflow: ellipsis;
 
